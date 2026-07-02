@@ -86,7 +86,7 @@ jobs:
         run: >
           mvn -B verify
           org.sonarsource.scanner.maven:sonar-maven-plugin:sonar
-          -Dsonar.projectKey=Devops-FIAP
+          -Dsonar.projectKey=maelsilva96
 
   deploy-STG:
     runs-on: ubuntu-latest
