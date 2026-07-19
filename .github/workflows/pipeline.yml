@@ -58,6 +58,7 @@ jobs:
 
       - name: Run Snyk to check for vulnerabilities (SCA)
         uses: snyk/actions/maven@master
+        if: always()
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
         with:
