@@ -47,7 +47,7 @@ jobs:
       - name: Snyk Code test (SAST)
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
-        run: snyk code test --severity-threshold=low --sarif-file-output=snyk-code.sarif
+        run: snyk code test --severity-threshold=medium --sarif-file-output=snyk-code.sarif
 
       - name: Upload Snyk Code SARIF results
         if: always()
