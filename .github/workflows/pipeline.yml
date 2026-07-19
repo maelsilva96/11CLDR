@@ -232,6 +232,6 @@ jobs:
       - name: DeployAzure
         uses: azure/webapps-deploy@v2
         with:
-          app-name: devopsfiap-on-app
+          app-name: devopsfiap-on-app-rm368609
           publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
           package: '${{ github.workspace }}/target/*.jar'
